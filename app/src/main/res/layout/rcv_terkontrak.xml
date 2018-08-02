@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="id.co.pln.simoka.bottomnav.MenuKeduaFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14dp"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/headerSKKI"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="@android:color/black"
+            android:text="Pagu SKKI" />
+
+        <TextView
+            android:id="@+id/headerPersentase"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="(%)"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/headerHarga"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Nilai (Rp)"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--By default, height of Toolbar and Bottom Navigation are equal-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_terkontrak"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/activity_horizontal_margin" />
+            <!--android:paddingBottom="@dimen/bottom_navigation_height"-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14dp"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="@android:color/black"
+            android:text="Jumlah Total" />
+
+        <TextView
+            android:id="@+id/footerHargaTotal"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            tools:text="10.000.000"/>
+
+    </LinearLayout>
+
+</LinearLayout>

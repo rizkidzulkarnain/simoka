@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    tools:context="id.co.pln.simoka.bottomnav.DummyFragment">
+
+    <include layout="@layout/content_menuketiga" />
+
+    <!--By default, height of Toolbar and Bottom Navigation are equal-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_square_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/activity_horizontal_margin"/>
+
+</FrameLayout>

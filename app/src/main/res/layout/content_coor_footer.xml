@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="id.co.pln.simoka.bottomnav.MenuKeduaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:paddingBottom="14dp"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Jumlah Total"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/footerHargaTotal"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="10.000.000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px">
+        <it.beppi.tristatetogglebutton_library.TriStateToggleButton
+            android:id="@+id/toogleTahun"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            app:tbIsMidSelectable="false"
+            app:tbDefaultStatus="on"
+            app:tbOnColor="@color/colorPrimary"
+            app:tbOffColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px">
+        <TextView
+            android:id="@+id/tahunLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="BASKET 2"
+            android:gravity="center"
+            tools:text="2018" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="14dp"
+             android:orientation="vertical">
+
+             <com.github.mikephil.charting.charts.PieChart
+                 android:id="@+id/piechart2"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" />
+         </RelativeLayout>
+     </LinearLayout>-->
+</LinearLayout>
